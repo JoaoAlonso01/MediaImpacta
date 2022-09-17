@@ -17,7 +17,7 @@
 				Ac3<input type="text" size=5 maxlength=2 name="ac3"><br>
 				Nota da prova<input type="text" size=5 maxlength=2 name="ntp" class="notaProva"><br>
 				<input type="submit" name="enviar" value="Enviar" class="btn"><br>
-				<input type="submit" name="Voltar" value="Voltar" class="btn"><br>
+				<input type="button" name="Voltar" value="Voltar" class="btn" onclick="location.href='index.php';"><br>
 	</form>
 	</font>
 	<font size=4 color="white" face="arial">
@@ -36,11 +36,5 @@ if (!empty($_REQUEST["ac1"]) && !empty($_REQUEST["ac2"])  && !empty($_REQUEST["a
 
 	$mf = ($totalAcs + $notaProva);
 	echo " MediaFinal: <input type='text' size=5 value=$mf disabled>";
-}
-
-
-//voltar para o index.
-if (isset($_POST["Voltar"])) {
-	header('Location: index.php');
 }
 ?>

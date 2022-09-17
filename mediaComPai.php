@@ -16,7 +16,7 @@
 			Nota Pai<input type="text" size=5 maxlength=10 name="pai" class="notaPai"><br>
 			Nota Prova<input type="text" size=5 maxlength=10 name="ntp" class="notaProva"><br>
 			<input type="submit" name="enviar" value="Enviar" class="btn"><br>
-			<input type="submit" name="Voltar" value="Voltar" class="btn"><br>
+			<input type="button" name="Voltar" value="Voltar" class="btn" onclick="location.href='index.php';"><br>
 </form>
 </body>
 
@@ -34,10 +34,5 @@ if (!empty($_REQUEST["ac1"]) && ($_REQUEST["ac2"]) && !empty($_REQUEST["ac3"]) &
 	$notaPai *= 0.3;
 	$notaFinal = $totalAcs + $notaProva + $notaPai;
 	echo " Nota final <input type='text' value=$notaFinal size=3 > ";
-}
-
-//Pagina Inicial
-if (isset($_POST["Voltar"])) {
-	header('Location: index.php');
 }
 ?>

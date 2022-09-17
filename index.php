@@ -10,23 +10,14 @@
 </head>
 
 <body>
-	<h1>Calculador de média da Faculdade Impacta</h1>
+	<h2>Calculador de média da Faculdade Impacta</h2>
 	<center>
 		<img src="images/impacta.png" class="logo">
 		<form name="menu" method="post" action="">
 			<center>
-				<input type="submit" name="botao1" value="Média sem pai" class="btn"><br>
-				<input type="submit" name="botao2" value="Média com pai" class="btn"><br>
+		<input type="button" name="botao1" value="Média sem pai" class="btn" onclick="location.href='mediaSemPai.php';"><br>
+				<input type="button" name="botao2" value="Média com pai" class="btn" onclick="location.href='mediaComPai.php';"><br>
 			</center>
 		</form>
 </body>
-
 </html>
-<?php
-if (isset($_POST["botao1"])) {
-	header('Location: mediaSemPai.php');
-}
-if (isset($_POST["botao2"])) {
-	header('Location: mediaComPai.php');
-}
-?>
