@@ -19,7 +19,7 @@ body {
     border: 0 none transparent;
     outline-width: 0;
     background-color: transparent;
-    margin-top: 20;
+    margin-top: 20px;
     font-style: initial;
     white-space: nowrap;
     user-select: none;
@@ -32,6 +32,7 @@ body {
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.6;
+    margin: 10px;
 }
 
 .btn:hover {
