@@ -47,7 +47,11 @@ body {
 }
 
 input {
-    background: transparent;
-    color: white;
+    background-color:whitesmoke;
+    color: black;
     margin-left: 10px;
+    font-size: 20px;
+}
+.notaProva{
+margin-right: 109px;
 }

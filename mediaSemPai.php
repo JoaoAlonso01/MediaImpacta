@@ -15,10 +15,12 @@
 				Ac1<input type="text" size=5 maxlength=2 name="ac1"><br>
 				Ac2<input type="text" size=5 maxlength=2 name="ac2"><br>
 				Ac3<input type="text" size=5 maxlength=2 name="ac3"><br>
-				Nota da prova<input type="text" size=5 maxlength=2 name="ntp"><br>
+				Nota da prova<input type="text" size=5 maxlength=2 name="ntp" class="notaProva"><br>
 				<input type="submit" name="enviar" value="Enviar" class="btn"><br>
 				<input type="submit" name="Voltar" value="Voltar" class="btn"><br>
 	</form>
+</font>
+<font size=4 color="white"face="arial">
 </body>
 
 </html>
@@ -31,8 +33,8 @@ if (!empty($_REQUEST["ac1"]) && !empty($_REQUEST["ac2"])  && !empty($_REQUEST["a
 	$notaProva = $_REQUEST["ntp"];
 	$totalAcs = ($ac1 + $ac2 + $ac3) / 3;
 	$mf = ($totalAcs + $notaProva) / 2;
-	echo " MediaAcs: <input type='text' value=$totalAcs disabled> ";
-	echo " MediaFinal: <input type='text' value=$mf disabled>";
+	echo " MediaAcs: <input type='text' size=5 value=$totalAcs disabled> ";
+	echo " MediaFinal: <input type='text' size=5 value=$mf disabled>";
 }
 
 
