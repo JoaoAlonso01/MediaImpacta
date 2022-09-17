@@ -19,8 +19,8 @@
 				<input type="submit" name="enviar" value="Enviar" class="btn"><br>
 				<input type="submit" name="Voltar" value="Voltar" class="btn"><br>
 	</form>
-</font>
-<font size=4 color="white"face="arial">
+	</font>
+	<font size=4 color="white" face="arial">
 </body>
 
 </html>
@@ -31,9 +31,10 @@ if (!empty($_REQUEST["ac1"]) && !empty($_REQUEST["ac2"])  && !empty($_REQUEST["a
 	$ac2 = $_REQUEST["ac2"];
 	$ac3 = $_REQUEST["ac3"];
 	$notaProva = $_REQUEST["ntp"];
-	$totalAcs = ($ac1 + $ac2 + $ac3) / 3;
-	$mf = ($totalAcs + $notaProva) / 2;
-	echo " MediaAcs: <input type='text' size=5 value=$totalAcs disabled> ";
+	$totalAcs = ($ac1 + $ac2 + $ac3) / 3 * 0.5;
+	$notaProva *= 0.5;
+
+	$mf = ($totalAcs + $notaProva);
 	echo " MediaFinal: <input type='text' size=5 value=$mf disabled>";
 }
 
