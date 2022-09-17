@@ -1,0 +1,67 @@
+body{
+display: block;
+background-color:#1f2020;
+}
+form
+{
+font-family:'Courier New', Courier, monospace ;
+margin: 0;
+padding: 0;
+display:flex;
+    justify-content: center;
+    align-items: center;
+ position: relative;
+}
+h1{
+   padding-top: 30px;
+    font-size: 50px;
+    display: flex;
+    color: white;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.btn
+{
+    font-weight: 700;
+    background-image: linear-gradient(to right, #3c5980, #006aff);
+    cursor: pointer;
+    font-size: inherit;
+    font-family: 'Open Sans',sans-serif;
+    line-height: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin-top: 20;
+    font-style: initial;
+    white-space: nowrap;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.btn:hover{
+    transition: all.7s ease;
+    line-height: 2.2;
+    border-radius: 25px;
+    font-size:18px;
+    color: #f1ac5d;
+}
+.btn:not(:hover){
+    transition: all.7s ease;
+}
+.logo{
+    display: flex; 
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+
