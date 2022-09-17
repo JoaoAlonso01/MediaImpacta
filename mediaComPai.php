@@ -13,7 +13,7 @@
 			Ac1<input type="text" size=5 maxlength=2 name="ac1"><br>
 			Ac2<input type="text" size=5 maxlength=2 name="ac2"><br>
 			Ac3<input type="text" size=5 maxlength=2 name="ac3"><br>
-			Nota Pai<input type="text" size=5 maxlength=10 name="pai"><br>
+			Nota Pai<input type="text" size=5 maxlength=10 name="pai" class="notaPai"><br>
 			Nota Prova<input type="text" size=5 maxlength=10 name="ntp" class="notaProva"><br>
 			<input type="submit" name="enviar" value="Enviar" class="btn"><br>
 			<input type="submit" name="Voltar" value="Voltar" class="btn"><br>
