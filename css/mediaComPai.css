@@ -54,8 +54,11 @@ input {
     border-radius: 5px;
 }
 .notaProva {
-    margin-right: 78px;
+    margin-right: 73px;
 }
 .notaPai{
     margin-right: 50px;
+}
+h2 .white-color{
+    color: white;
 }

@@ -5,21 +5,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/MediaQuerys/MediaQueryComPai.css">
 	<link rel="stylesheet" href="css/mediaComPai.css">
 </head>
+<body>
 <form name="menu" method="post" action="">
 	<center>
-		<font size=5 color="white" face="arial">
-			Ac1<input type="text" size=5 maxlength=2 name="ac1" required><br>
-			Ac2<input type="text" size=5 maxlength=2 name="ac2" required><br>
-			Ac3<input type="text" size=5 maxlength=2 name="ac3" required><br>
-			Nota Prova<input type="text" size=5 maxlength=2 name="ntp" class="notaProva" required><br>
-			Nota Pai<input type="text" size=5 maxlength=2 name="pai" class="notaPai" required><br>
+		<h2><font color="white">
+			Ac1<input type="number" name="ac1" min="0" max="10" step="0.01" required><br>
+			Ac2<input type="number" name="ac2" min="0" max="10" step="0.01" required><br>
+			Ac3<input type="number" name="ac3" min="0" max="10" step="0.01" required><br>
+			Nota Prova<input type="number" name="ntp" class="notaProva" min="0" max="10" step="0.01" required><br>
+			Nota Pai<input type="number" name="pai" class="notaPai" min="0" max="10" step="0.01" required><br>
 			<input type="submit" name="enviar" value="Enviar" class="btn"><br>
 			<input type="button" name="Voltar" value="Voltar" class="btn" onclick="location.href='index.php';"><br>
+</font></h2>
 </form>
 </body>
-
 </html>
 <?php
 //Calculo
@@ -33,6 +35,6 @@ if (!empty($_REQUEST["ac1"]) && ($_REQUEST["ac2"]) && !empty($_REQUEST["ac3"]) &
 	$notaProva *=  0.4;
 	$notaPai *= 0.3;
 	$notaFinal = $totalAcs + $notaProva + $notaPai;
-	echo " Nota final <input type='text' value=$notaFinal size=3 > ";
+	echo " Media final: <input type='text' value=$notaFinal size=3 readonly> ";
 }
 ?>
